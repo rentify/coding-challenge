@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'weather'
+
+puts Weather.new.query(ARGV[0])
+

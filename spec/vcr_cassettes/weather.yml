@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.openweathermap.org/data/2.5/weather?q=London
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 06 Mar 2014 13:52:07 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: |
+        {"coord":{"lon":-81.23,"lat":42.98},"sys":{"message":0.0054,"country":"CA","sunrise":1394106671,"sunset":1394148052},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"cmc stations","main":{"temp":260.15,"pressure":1033,"humidity":60,"temp_min":260.15,"temp_max":260.15},"wind":{"speed":6.7,"deg":100},"clouds":{"all":20},"dt":1394110800,"id":6058560,"name":"London","cod":200}
+    http_version: 
+  recorded_at: Thu, 06 Mar 2014 13:52:07 GMT
+recorded_with: VCR 2.8.0
