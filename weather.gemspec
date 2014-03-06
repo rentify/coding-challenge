@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'weather-mg'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.date        = '2014-03-06'
   s.summary     = "Weather"
   s.description = "Weather command line application"

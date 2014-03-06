@@ -21,6 +21,12 @@ describe Weather do
         expect(weather.query('London')).to include('clouds')
       end
     end
+
+    it 'returns a nice error if the location is not found' do
+      VCR.use_cassette(:wrong_weather) do
+        expect(weather.query('DUMMY LOCATION')).to include('Sorry')
+      end
+    end
   end
 end
 
